@@ -1,0 +1,13 @@
+.uk-skip-link {
+    position: absolute;
+    top: -999px;
+    left: 0;
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.uk-skip-link:focus {
+    top: 0;
+}

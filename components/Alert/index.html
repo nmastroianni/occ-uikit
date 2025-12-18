@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <style>
+      pre[class*="language-"],
+      code[class*="language-"] {
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+      .code-block-container {
+        position: relative;
+      }
+      .copy-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Alert</h1>
+        <p class="uk-text-lead">
+          The Alert component displays dismissible success, warning, and error
+          messages.
+        </p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div data-uk-alert&gt;
+    &lt;a href class="uk-alert-close" data-uk-close&gt;&lt;/a&gt;
+    &lt;h3&gt;Notice&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+          <button class="copy-button uk-button uk-button-default">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <div data-uk-alert>
+          <a href class="uk-alert-close" data-uk-close></a>
+          <h3>Notice</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <h2 class="uk-heading-divider">Component Options</h2>
+
+        <table class="uk-table uk-table-striped">
+          <thead>
+            <tr>
+              <th>Option</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>animation</code></td>
+              <td>
+                Set to <code>false</code> to disable the animation. By default,
+                the animation is enabled.
+              </td>
+            </tr>
+            <tr>
+              <td><code>duration</code></td>
+              <td>
+                The speed of the animation in milliseconds. For example,
+                <code>500</code> would be half a second.
+              </td>
+            </tr>
+            <tr>
+              <td><code>sel-close</code></td>
+              <td>
+                The CSS selector for the close button. By default, it is
+                <code>.uk-alert-close</code>.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="uk-heading-divider">Accessibility</h2>
+
+        <p>
+          The Alert component is built with accessibility in mind and includes
+          features like:
+        </p>
+
+        <ul class="uk-list uk-list-bullet">
+          <li>
+            <b>Keyboard Navigation:</b> Users can navigate to the close button
+            using the tab key.
+          </li>
+          <li>
+            <b>Screen Reader Support:</b> The alert is properly announced to
+            screen readers.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

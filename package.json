@@ -1,0 +1,16 @@
+{
+  "name": "occ-uikit",
+  "module": "index.html",
+  "description": "A collection of UIkit components for use in the Canvas LMS.",
+  "license": "MIT",
+  "author": "",
+  "scripts": {
+    "start": "bun x live-server . --port=5500"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.7.4"
+  },
+  "private": true,
+  "type": "module"
+}

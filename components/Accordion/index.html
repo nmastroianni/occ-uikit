@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <style>
+      pre[class*="language-"],
+      code[class*="language-"] {
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+      .code-block-container {
+        position: relative;
+      }
+      .copy-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Accordion</h1>
+        <p class="uk-text-lead">
+          The Accordion component allows you to create vertically stacked
+          sections of content that can be revealed one at a time.
+        </p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;ul data-uk-accordion&gt;
+    &lt;li class="uk-open"&gt;
+      &lt;a class="uk-accordion-title" href&gt;Item 1&lt;/a&gt;
+      &lt;div class="uk-accordion-content"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="uk-accordion-title" href&gt;Item 2&lt;/a&gt;
+      &lt;div class="uk-accordion-content"&gt;
+        &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="uk-accordion-title" href&gt;Item 3&lt;/a&gt;
+      &lt;div class="uk-accordion-content"&gt;
+        &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+          <button class="copy-button uk-button uk-button-default">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <ul data-uk-accordion>
+          <li class="uk-open">
+            <a class="uk-accordion-title" href>Item 1</a>
+            <div class="uk-accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title" href>Item 2</a>
+            <div class="uk-accordion-content">
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor reprehenderit.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title" href>Item 3</a>
+            <div class="uk-accordion-content">
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat proident.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="uk-heading-divider">Component Options</h2>
+
+        <table class="uk-table uk-table-striped">
+          <thead>
+            <tr>
+              <th>Option</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>multiple</code></td>
+              <td>
+                Set to <code>true</code> to allow multiple accordion items to be
+                open at the same time. By default, only one item can be open at
+                a time.
+              </td>
+            </tr>
+            <tr>
+              <td><code>active</code></td>
+              <td>
+                Set to the number of the item you want to be open by default
+                (e.g., <code>0</code> for the first item, <code>1</code> for the
+                second, and so on).
+              </td>
+            </tr>
+            <tr>
+              <td><code>collapsible</code></td>
+              <td>
+                Set to <code>false</code> if you want to prevent all items from
+                being closed. By default, all items can be collapsed.
+              </td>
+            </tr>
+            <tr>
+              <td><code>duration</code></td>
+              <td>
+                The speed of the open/close animation in milliseconds. For
+                example,
+                <code>500</code> would be half a second.
+              </td>
+            </tr>
+            <tr>
+              <td><code>transition</code></td>
+              <td>
+                The animation effect to use when opening and closing items. For
+                example,
+                <code>ease-in-out</code>.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="uk-heading-divider">Accessibility</h2>
+
+        <p>
+          Accordions can help make your content more accessible to people with
+          disabilities. By default, UIkit accordions are built with
+          accessibility in mind and include features like:
+        </p>
+
+        <ul class="uk-list uk-list-bullet">
+          <li>
+            <b>Keyboard Navigation:</b> Users can navigate through the accordion
+            using the tab and arrow keys.
+          </li>
+          <li>
+            <b>Screen Reader Support:</b> The accordion is properly announced to
+            screen readers, including whether an item is open or closed.
+          </li>
+          <li>
+            <b>Reduced Clutter:</b> By hiding content until it's needed,
+            accordions reduce the amount of information on the page at one time,
+            which can be helpful for users with cognitive disabilities.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>
