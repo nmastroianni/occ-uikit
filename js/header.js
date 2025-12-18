@@ -16,7 +16,7 @@ function loadHeader() {
     ? ""
     : `
         <ul class="uk-breadcrumb uk-margin-top">
-            <li><a href="/">Home</a></li>
+            <li><a href="${baseUrl}">Home</a></li>
             <li><span>${pathParts[pathParts.length - 2]}</span></li>
         </ul>
       `;
@@ -26,7 +26,7 @@ function loadHeader() {
                 <nav class="uk-navbar-container" data-uk-navbar>
                     <div class="uk-container">
                         <div class="uk-navbar-left">
-                            <a href="/" class="uk-navbar-item uk-logo">OCC UIkit</a>
+                            <a href="${baseUrl}" class="uk-navbar-item uk-logo">OCC UIkit</a>
                         </div>
                     </div>
                 </nav>

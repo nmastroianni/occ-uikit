@@ -8,6 +8,7 @@
   </head>
   <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
     <div id="header-container"></div>
+    <script src="js/config.js"></script>
     <script src="js/header.js"></script>
     <main id="main" class="uk-flex-auto uk-section">
       <div class="uk-container">
@@ -31,7 +32,7 @@
             .map(
               (component) => `
             <div>
-              <a href="components/${component.name}/index.html" class="uk-link-reset uk-flex">
+              <a href="${baseUrl}components/${component.name}/index.html" class="uk-link-reset uk-flex">
                 <div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column">
                   <div class="uk-card-header">
                     <h2 class="uk-card-title">${component.name}</h2>
