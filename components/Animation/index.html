@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Animation</h1>
+        <p class="uk-text-lead">
+          The Animation component provides a collection of smooth, CSS-based
+          animations for web pages.
+        </p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-animation-fade"&gt;...&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-default">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Examples:</h2>
+        <div class="uk-child-width-1-3@m" data-uk-grid>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-fade"
+              data-animation="uk-animation-fade"
+            >
+              <p>Fade</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-scale-up"
+              data-animation="uk-animation-scale-up"
+            >
+              <p>Scale Up</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-scale-down"
+              data-animation="uk-animation-scale-down"
+            >
+              <p>Scale Down</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-slide-top"
+              data-animation="uk-animation-slide-top"
+            >
+              <p>Slide Top</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom"
+              data-animation="uk-animation-slide-bottom"
+            >
+              <p>Slide Bottom</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-slide-left"
+              data-animation="uk-animation-slide-left"
+            >
+              <p>Slide Left</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-slide-right"
+              data-animation="uk-animation-slide-right"
+            >
+              <p>Slide Right</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+          <div>
+            <div
+              class="uk-card uk-card-default uk-card-body uk-animation-shake"
+              data-animation="uk-animation-shake"
+            >
+              <p>Shake</p>
+            </div>
+            <button
+              class="uk-button uk-button-default uk-margin-top replay-button"
+            >
+              Replay
+            </button>
+          </div>
+        </div>
+
+        <h2 class="uk-heading-divider">Component Options</h2>
+
+        <table class="uk-table uk-table-striped">
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>uk-animation-fade</code></td>
+              <td>Fades the element in.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-scale-up</code></td>
+              <td>Scales the element up.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-scale-down</code></td>
+              <td>Scales the element down.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-slide-top</code></td>
+              <td>Slides the element in from the top.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-slide-bottom</code></td>
+              <td>Slides the element in from the bottom.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-slide-left</code></td>
+              <td>Slides the element in from the left.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-slide-right</code></td>
+              <td>Slides the element in from the right.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-shake</code></td>
+              <td>Shakes the element.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-reverse</code></td>
+              <td>Reverses the animation.</td>
+            </tr>
+            <tr>
+              <td><code>uk-animation-fast</code></td>
+              <td>Speeds up the animation.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="uk-heading-divider">Accessibility</h2>
+
+        <p>
+          While animations can make a page more engaging, they can also be
+          distracting or cause issues for users with motion sensitivities. Use
+          animations sparingly and avoid long or repetitive animations. The
+
+          <code>prefers-reduced-motion</code> media query can be used to disable
+          animations for users who have requested it in their system
+          preferences.
+        </p>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+    <script>
+      const replayButtons = document.querySelectorAll(".replay-button");
+
+      replayButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const animationExample = button.previousElementSibling;
+          const animationClass = animationExample.dataset.animation;
+          animationExample.classList.remove(animationClass);
+          void animationExample.offsetWidth; // Trigger reflow
+          animationExample.classList.add(animationClass);
+        });
+      });
+    </script>
+  </body>
+</html>

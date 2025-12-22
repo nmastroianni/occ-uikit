@@ -1,13 +1,47 @@
 .uk-skip-link {
-    position: absolute;
-    top: -999px;
-    left: 0;
-    background: #fff;
-    color: #333;
-    padding: 10px;
-    z-index: 9999;
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  z-index: 9999;
 }
 
 .uk-skip-link:focus {
-    top: 0;
+  top: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string {
+  color: #008000 !important;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #005a9c !important;
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.code-block-container {
+  position: relative;
+}
+.copy-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

@@ -9,31 +9,27 @@
   },
   {
     "name": "Align",
-    "description": "The Align component helps with content positioning."
+    "description": "A set of utility classes that allow you to align content in various ways."
   },
   {
     "name": "Animation",
-    "description": "The Animation component provides various animation effects."
+    "description": "A collection of smooth, CSS-based animations for web pages."
   },
   {
     "name": "Article",
-    "description": "The Article component structures content for articles."
+    "description": "Create articles within your page, including a title, meta text, and lead paragraph."
   },
   {
     "name": "Background",
-    "description": "Description for Background goes here."
+    "description": "Easily apply background colors, gradients, and images to your elements."
   },
   {
     "name": "Badge",
-    "description": "Description for Badge goes here."
-  },
-  {
-    "name": "Base",
-    "description": "Description for Base goes here."
+    "description": "Easily create badges to highlight and label content."
   },
   {
     "name": "Breadcrumb",
-    "description": "Description for Breadcrumb goes here."
+    "description": "Create breadcrumbs to show users their location within the site."
   },
   {
     "name": "Button",

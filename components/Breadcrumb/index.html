@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Breadcrumb</h1>
+        <p class="uk-text-lead">
+          Create breadcrumbs to show users their location within the site.
+        </p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;ul class="uk-breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Parent Page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;Current Page&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">
+            Copy
+          </button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <ul class="uk-breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Parent Page</a></li>
+          <li><span>Current Page</span></li>
+        </ul>
+
+        <h2 class="uk-heading-divider">Component Options</h2>
+
+        <p>There are no component options for breadcrumbs.</p>
+
+        <h2 class="uk-heading-divider">Accessibility</h2>
+
+        <p>
+          For accessibility, it is recommended to wrap your breadcrumb in a
+          <code>&lt;nav&gt;</code> element with an
+          <code>aria-label="breadcrumb"</code> attribute. The last item in the
+          breadcrumb trail should have an <code>aria-current="page"</code>
+          attribute.
+        </p>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;nav aria-label="Breadcrumb"&gt;
+  &lt;ul class="uk-breadcrumb"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Parent Page&lt;/a&gt;&lt;/li&gt;
+    &lt;li aria-current="page"&gt;&lt;span&gt;Current Page&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">
+            Copy
+          </button>
+        </div>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

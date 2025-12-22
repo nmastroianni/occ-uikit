@@ -23,13 +23,15 @@ function loadHeader() {
 
   const header = `
                 <a href="#main" class="uk-skip-link">Skip to main content</a>
-                <nav class="uk-navbar-container" data-uk-navbar>
+                <header class="uk-background-primary uk-light">
+                <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
                     <div class="uk-container">
                         <div class="uk-navbar-left">
                             <a href="${baseUrl}" class="uk-navbar-item uk-logo">OCC UIkit</a>
                         </div>
                     </div>
                 </nav>
+                </header>
                 <div class="uk-container">
                     ${breadcrumbNav}
                 </div>
