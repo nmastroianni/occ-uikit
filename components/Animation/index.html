@@ -26,7 +26,7 @@
 
         <div class="code-block-container">
           <pre><code class="language-html">&lt;div class="uk-animation-fade"&gt;...&lt;/div&gt;</code></pre>
-          <button class="copy-button uk-button uk-button-default">Copy</button>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
         </div>
 
         <h2 class="uk-heading-divider">Examples:</h2>
@@ -39,7 +39,7 @@
               <p>Fade</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -52,7 +52,7 @@
               <p>Scale Up</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -65,7 +65,7 @@
               <p>Scale Down</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -78,7 +78,7 @@
               <p>Slide Top</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -91,7 +91,7 @@
               <p>Slide Bottom</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -104,7 +104,7 @@
               <p>Slide Left</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -117,7 +117,7 @@
               <p>Slide Right</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -130,7 +130,7 @@
               <p>Shake</p>
             </div>
             <button
-              class="uk-button uk-button-default uk-margin-top replay-button"
+              class="uk-button uk-button-primary uk-margin-top replay-button"
             >
               Replay
             </button>
@@ -215,8 +215,10 @@
       const replayButtons = document.querySelectorAll(".replay-button");
 
       replayButtons.forEach((button) => {
+        const animationExample = button.previousElementSibling;
+        const animationName = animationExample.querySelector("p").textContent;
+        button.setAttribute("aria-label", `Replay ${animationName} animation`);
         button.addEventListener("click", () => {
-          const animationExample = button.previousElementSibling;
           const animationClass = animationExample.dataset.animation;
           animationExample.classList.remove(animationClass);
           void animationExample.offsetWidth; // Trigger reflow
