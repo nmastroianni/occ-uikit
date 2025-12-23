@@ -33,47 +33,47 @@
   },
   {
     "name": "Button",
-    "description": "Description for Button goes here."
+    "description": "A collection of styles for creating buttons"
   },
   {
     "name": "Card",
-    "description": "Description for Card goes here."
+    "description": "A flexible and extensible content container"
   },
   {
     "name": "Close",
-    "description": "Description for Close goes here."
+    "description": "A generic close icon, which can be used for any dismissible element."
   },
   {
     "name": "Column",
-    "description": "Description for Column goes here."
+    "description": "A masonry-like layout for grid items."
   },
   {
     "name": "Comment",
-    "description": "Description for Comment goes here."
+    "description": "A component for displaying comments."
   },
   {
     "name": "Container",
-    "description": "Description for Container goes here."
+    "description": "A component for creating a responsive, centered container."
   },
   {
     "name": "Countdown",
-    "description": "Description for Countdown goes here."
+    "description": "A component for creating a countdown timer."
   },
   {
     "name": "Cover",
-    "description": "Description for Cover goes here."
+    "description": "A component for creating a responsive, full-height cover image or video."
   },
   {
     "name": "Description List",
-    "description": "Description for Description List goes here."
+    "description": "A component for creating a description list."
   },
   {
     "name": "Divider",
-    "description": "Description for Divider goes here."
+    "description": "A component for creating a divider."
   },
   {
     "name": "Dotnav",
-    "description": "Description for Dotnav goes here."
+    "description": "A component for creating a dot navigation."
   },
   {
     "name": "Drop",
@@ -93,7 +93,7 @@
   },
   {
     "name": "Filter",
-    "description": "Description for Filter goes here."
+    "description": "A component for creating a filterable, sortable grid."
   },
   {
     "name": "Flex",
@@ -241,7 +241,7 @@
   },
   {
     "name": "Slideshow",
-    "description": "Description for Slideshow goes here."
+    "description": "A component for creating a slideshow."
   },
   {
     "name": "Sortable",

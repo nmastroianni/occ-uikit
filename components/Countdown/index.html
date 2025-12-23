@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Countdown</h1>
+        <p class="uk-text-lead">
+          A component for creating a countdown timer.
+        </p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-grid-small uk-child-width-auto uk-h1" data-uk-grid data-uk-countdown="date: 2026-12-31T23:59:59+00:00"&gt;
+    &lt;div&gt;
+        &lt;div class="uk-countdown-number uk-countdown-days"&gt;&lt;/div&gt;
+        &lt;div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"&gt;Days&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="uk-countdown-separator"&gt;:&lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="uk-countdown-number uk-countdown-hours"&gt;&lt;/div&gt;
+        &lt;div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"&gt;Hours&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="uk-countdown-separator"&gt;:&lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="uk-countdown-number uk-countdown-minutes"&gt;&lt;/div&gt;
+        &lt;div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"&gt;Minutes&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="uk-countdown-separator"&gt;:&lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="uk-countdown-number uk-countdown-seconds"&gt;&lt;/div&gt;
+        &lt;div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"&gt;Seconds&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <div class="uk-grid-small uk-child-width-auto uk-h1" data-uk-grid data-uk-countdown="date: 2026-12-31T23:59:59+00:00">
+            <div>
+                <div class="uk-countdown-number uk-countdown-days"></div>
+                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-hours"></div>
+                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-minutes"></div>
+                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+                <div class="uk-countdown-number uk-countdown-seconds"></div>
+                <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+            </div>
+
+      </div>
+      <h2 class="uk-heading-divider">Accessibility</h2>
+
+      <p>The Countdown component automatically sets the appropriate WAI-ARIA roles, states and properties.</p>
+      <ul class="uk-list uk-list-disc">
+          <li>The <em>container</em> element has the <code>timer</code> role.</li>
+      </ul>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Cover</h1>
+        <p class="uk-text-lead">
+          A component for creating a responsive, full-height cover image or
+          video.
+        </p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-cover-container"&gt;
+    &lt;img src="https://getuikit.com/docs/images/dark.jpg" alt="" data-uk-cover&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <div class="uk-cover-container" style="height: 300px">
+          <img
+            src="https://getuikit.com/docs/images/dark.jpg"
+            alt=""
+            data-uk-cover
+          />
+        </div>
+
+        <h2 class="uk-heading-divider">iframe</h2>
+        <p>A cover can also contain an iframe.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-cover-container" style="height: 300px;"&gt;
+    &lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83628285632!2d-81.47225116422904!3d28.57954922699478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fec1475b%3A0x517d4a7a5a4155!2sOrlando%2C+FL!5e0!3m2!1sen!2sus!4v1532026339739" width="600" height="450" frameborder="0" style="border:0" allowfullscreen data-uk-cover&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-cover-container" style="height: 300px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83628285632!2d-81.47225116422904!3d28.57954922699478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fec1475b%3A0x517d4a7a5a4155!2sOrlando%2C+FL!5e0!3m2!1sen!2sus!4v1532026339739"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+            data-uk-cover
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

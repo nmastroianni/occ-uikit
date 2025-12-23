@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Button</h1>
+        <p class="uk-text-lead">Create stout buttons with just one class.</p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;button class="uk-button uk-button-default"&gt;Button&lt;/button&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <button class="uk-button uk-button-default">Button</button>
+
+        <h2 class="uk-heading-divider">Component Options</h2>
+
+        <div class="uk-overflow-auto">
+          <table
+            class="uk-table uk-table-striped uk-table-hover uk-table-middle"
+          >
+            <thead>
+              <tr>
+                <th class="uk-width-medium">Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.uk-button-default</code></td>
+                <td>Creates a default, themeable button style.</td>
+              </tr>
+              <tr>
+                <td><code>.uk-button-primary</code></td>
+                <td>
+                  Indicates the primary action, giving it a more prominent look.
+                </td>
+              </tr>
+              <tr>
+                <td><code>.uk-button-secondary</code></td>
+                <td>
+                  Indicates a secondary action, giving it a less prominent look.
+                </td>
+              </tr>
+              <tr>
+                <td><code>.uk-button-danger</code></td>
+                <td>
+                  Indicates a destructive or dangerous action, typically styled
+                  in red.
+                </td>
+              </tr>
+              <tr>
+                <td><code>.uk-button-text</code></td>
+                <td>
+                  Removes button styling, making it look like a plain text link.
+                </td>
+              </tr>
+              <tr>
+                <td><code>.uk-button-link</code></td>
+                <td>
+                  Mimics the appearance of a hyperlink, often used for less
+                  critical actions.
+                </td>
+              </tr>
+              <tr>
+                <td><code>.uk-button-small</code></td>
+                <td>Reduces the button size for a more compact appearance.</td>
+              </tr>
+              <tr>
+                <td><code>.uk-button-large</code></td>
+                <td>Increases the button size for greater prominence.</td>
+              </tr>
+              <tr>
+                <td><code>.uk-width-1-1</code></td>
+                <td>Makes the button span the full width of its container.</td>
+              </tr>
+              <tr>
+                <td><code>disabled</code></td>
+                <td>
+                  Disables the button, making it unclickable and visually muted.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="uk-heading-divider">Accessibility</h2>
+
+        <p>
+          The Button component is designed with accessibility in mind, ensuring
+          that all users can interact with it effectively. Here are some key
+          considerations:
+        </p>
+
+        <ul class="uk-list uk-list-bullet">
+          <li>
+            <strong>Keyboard Navigation:</strong> All buttons are focusable and
+            can be activated using the <code>Enter</code> or
+            <code>Space</code> keys, ensuring full operability for keyboard-only
+            users.
+          </li>
+          <li>
+            <strong>Screen Reader Support:</strong> Buttons are properly
+            announced by screen readers, and the <code>disabled</code> attribute
+            is correctly interpreted, preventing interaction with inactive
+            buttons.
+          </li>
+          <li>
+            <strong>Clear Labeling:</strong> It is crucial to provide clear and
+            descriptive text within the button to inform users of its purpose.
+            Avoid generic labels like "Click Here."
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

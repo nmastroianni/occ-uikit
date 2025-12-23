@@ -1,0 +1,16 @@
+# Dependency folders
+node_modules/
+dist/
+build/
+.next/
+
+# Environment and sensitive data
+.env*
+*.key
+*.pem
+
+# IDE and System files
+.git/
+.zed/
+.vscode/
+.DS_Store

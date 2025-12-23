@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Dotnav</h1>
+        <p class="uk-text-lead">A component for creating a dot navigation.</p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;ul class="uk-dotnav"&gt;
+    &lt;li class="uk-active"&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <ul class="uk-dotnav">
+          <li class="uk-active"><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+
+        <h2 class="uk-heading-divider">Vertical modifier</h2>
+        <p>A dotnav can be displayed vertically.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;ul class="uk-dotnav uk-dotnav-vertical"&gt;
+    &lt;li class="uk-active"&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <h2 class="uk-heading-divider">Slideshow</h2>
+        <p>A dotnav can be used to navigate a slideshow.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow&gt;
+
+    &lt;ul class="uk-slideshow-items"&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" alt="" data-uk-cover&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" alt="" data-uk-cover&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" alt="" data-uk-cover&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="uk-position-bottom-center uk-position-small"&gt;
+        &lt;ul class="uk-dotnav"&gt;
+            &lt;li data-uk-slideshow-item="0"&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li data-uk-slideshow-item="1"&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li data-uk-slideshow-item="2"&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light"
+          data-uk-slideshow
+        >
+          <ul class="uk-slideshow-items">
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                alt=""
+                data-uk-cover
+              />
+            </li>
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                alt=""
+                data-uk-cover
+              />
+            </li>
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                alt=""
+                data-uk-cover
+              />
+            </li>
+          </ul>
+
+          <div class="uk-position-bottom-center uk-position-small">
+            <ul class="uk-dotnav">
+              <li data-uk-slideshow-item="0"><a href="#">Item 1</a></li>
+              <li data-uk-slideshow-item="1"><a href="#">Item 2</a></li>
+              <li data-uk-slideshow-item="2"><a href="#">Item 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

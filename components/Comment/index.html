@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Comment</h1>
+        <p class="uk-text-lead">A component for displaying comments.</p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;article class="uk-comment"&gt;
+    &lt;header class="uk-comment-header"&gt;
+        &lt;div class="uk-grid-medium uk-flex-middle" data-uk-grid&gt;
+            &lt;div class="uk-width-auto"&gt;
+                &lt;img class="uk-comment-avatar" src="https://placehold.co/80x80" width="80" height="80" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="uk-width-expand"&gt;
+                &lt;h4 class="uk-comment-title uk-margin-remove"&gt;&lt;a class="uk-link-reset" href="#"&gt;Author&lt;/a&gt;&lt;/h4&gt;
+                &lt;ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;12 days ago&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Reply&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class="uk-comment-body"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <article class="uk-comment">
+          <header class="uk-comment-header">
+            <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+              <div class="uk-width-auto">
+                <img
+                  class="uk-comment-avatar"
+                  src="https://placehold.co/80"
+                  width="80"
+                  height="80"
+                  alt=""
+                />
+              </div>
+              <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove">
+                  <a class="uk-link-reset" href="#">Author</a>
+                </h4>
+                <ul
+                  class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"
+                >
+                  <li><a href="#">12 days ago</a></li>
+                  <li><a href="#">Reply</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <div class="uk-comment-body">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </article>
+
+        <h2 class="uk-heading-divider">Accessibility</h2>
+        <p>
+          The Comment component is designed with accessibility in mind. Here are
+          some key considerations:
+        </p>
+        <ul class="uk-list uk-list-bullet">
+          <li>
+            <strong>Semantic Structure:</strong> Use proper semantic HTML for
+            the content within the comment. For example, use headings
+            <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> for titles and
+            <code>&lt;p&gt;</code> for text.
+          </li>
+          <li>
+            <strong>Heading Hierarchy:</strong> Ensure that the heading
+            hierarchy is logical and consistent. The comment title should be an
+            appropriate heading level for the context in which the comment is
+            used.
+          </li>
+          <li>
+            <strong>Image Alt Text:</strong> If the comment contains an image,
+            make sure to provide a descriptive <code>alt</code> attribute for
+            the image to describe its content to screen reader users.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

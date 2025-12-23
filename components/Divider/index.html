@@ -16,46 +16,44 @@
     <script src="../../js/header.js"></script>
     <main id="main" class="uk-flex-auto uk-section">
       <div class="uk-container">
-        <h1 class="uk-heading-medium">Breadcrumb</h1>
+        <h1 class="uk-heading-medium">Divider</h1>
         <p class="uk-text-lead">
-          Create breadcrumbs to show users their location within the site.
+          A component for creating a divider.
         </p>
 
         <h2 class="uk-heading-divider">Usage</h2>
 
         <div class="code-block-container">
-          <pre><code class="language-html">&lt;nav aria-label="Breadcrumb"&gt;
-  &lt;ul class="uk-breadcrumb"&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Parent Page&lt;/a&gt;&lt;/li&gt;
-    &lt;li aria-current="page"&gt;&lt;span&gt;Current Page&lt;/span&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
+          <pre><code class="language-html">&lt;hr&gt;</code></pre>
           <button class="copy-button uk-button uk-button-primary">Copy</button>
         </div>
 
         <h2 class="uk-heading-divider">Example:</h2>
-        <nav aria-label="Breadcrumb">
-          <ul class="uk-breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Parent Page</a></li>
-            <li aria-current="page"><span>Current Page</span></li>
-          </ul>
-        </nav>
+        <hr>
 
-        <h2 class="uk-heading-divider">Component Options</h2>
+        <h2 class="uk-heading-divider">Icon</h2>
+        <p>A divider can have an icon.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;hr class="uk-divider-icon"&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <hr class="uk-divider-icon">
 
-        <p>There are no component options for breadcrumbs.</p>
+        <h2 class="uk-heading-divider">Small</h2>
+        <p>A divider can be small.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;hr class="uk-divider-small"&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <hr class="uk-divider-small">
 
-        <h2 class="uk-heading-divider">Accessibility</h2>
-
-        <p>
-          For accessibility, it is recommended to wrap your breadcrumb in a
-          <code>&lt;nav&gt;</code> element with an
-          <code>aria-label="breadcrumb"</code> attribute. The last item in the
-          breadcrumb trail should have an <code>aria-current="page"</code>
-          attribute.
-        </p>
+        <h2 class="uk-heading-divider">Vertical</h2>
+        <p>A divider can be vertical.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-divider-vertical"&gt;&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-divider-vertical"></div>
       </div>
     </main>
     <div

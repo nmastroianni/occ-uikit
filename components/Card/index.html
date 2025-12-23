@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Card</h1>
+        <p class="uk-text-lead">Create layout boxes with different styles.</p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-card uk-card-default uk-card-body"&gt;
+    &lt;h3 class="uk-card-title"&gt;Default&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum &lt;a href="#"&gt;dolor&lt;/a&gt; sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <div class="uk-card uk-card-default uk-card-body">
+          <h3 class="uk-card-title">Default</h3>
+          <p>
+            Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.
+          </p>
+        </div>
+        <h2 class="uk-heading-divider">Component Options</h2>
+        <p>There are a few card options available.</p>
+        <h3 class="uk-heading-bullet">Hover Card</h3>
+        <p>A card can have a hover effect.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-card uk-card-hover uk-card-body"&gt;
+    &lt;h3 class="uk-card-title"&gt;Hover&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-card uk-card-hover uk-card-body">
+          <h3 class="uk-card-title">Hover</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <h3 class="uk-heading-bullet">Primary Card</h3>
+        <p>A card can have a primary style.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-card uk-card-primary uk-card-body"&gt;
+    &lt;h3 class="uk-card-title"&gt;Primary&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-card uk-card-primary uk-card-body">
+          <h3 class="uk-card-title">Primary</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <h3 class="uk-heading-bullet">Secondary Card</h3>
+        <p>A card can have a secondary style.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-card uk-card-secondary uk-card-body"&gt;
+    &lt;h3 class="uk-card-title"&gt;Secondary&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-card uk-card-secondary uk-card-body">
+          <h3 class="uk-card-title">Secondary</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <h3 class="uk-heading-bullet">Size</h3>
+        <p>A card can be small or large.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-card uk-card-default uk-card-body uk-card-small"&gt;
+    &lt;h3 class="uk-card-title"&gt;Small&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="uk-card uk-card-default uk-card-body uk-card-large"&gt;
+    &lt;h3 class="uk-card-title"&gt;Large&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-card-small">
+          <h3 class="uk-card-title">Small</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <br />
+        <div class="uk-card uk-card-default uk-card-body uk-card-large">
+          <h3 class="uk-card-title">Large</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <h3 class="uk-heading-bullet">Card with media</h3>
+        <p>A card can contain media.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-child-width-1-2@m" data-uk-grid&gt;
+    &lt;div&gt;
+        &lt;div class="uk-card uk-card-default"&gt;
+            &lt;div class="uk-card-media-top"&gt;
+                &lt;img src="https://placehold.co/600x300" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="uk-card-body"&gt;
+                &lt;h3 class="uk-card-title"&gt;Media Top&lt;/h3&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="uk-card uk-card-default"&gt;
+            &lt;div class="uk-card-body"&gt;
+                &lt;h3 class="uk-card-title"&gt;Media Bottom&lt;/h3&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="uk-card-media-bottom"&gt;
+                &lt;img src="https://placehold.co/600x300" alt=""&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&n>&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-child-width-1-2@m" data-uk-grid>
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                <img src="https://placehold.co/600x300" alt="" />
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Bottom</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+              </div>
+              <div class="uk-card-media-bottom">
+                <img src="https://placehold.co/600x300" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="uk-heading-bullet">Card with badge</h3>
+        <p>A card can contain a badge.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-card uk-card-default uk-card-body"&gt;
+    &lt;div class="uk-card-badge uk-label"&gt;Badge&lt;/div&gt;
+    &lt;h3 class="uk-card-title"&gt;Default&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <h2 class="uk-heading-divider">Accessibility</h2>
+
+        <p>
+          The Card component is designed with accessibility in mind, ensuring
+          that all users can interact with it effectively. Here are some key
+          considerations:
+        </p>
+
+        <ul class="uk-list uk-list-bullet">
+          <li>
+            <strong>Semantic Structure:</strong> Use proper semantic HTML for
+            the content within the card. For example, use headings
+            <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> for titles and
+            <code>&lt;p&gt;</code> for text.
+          </li>
+          <li>
+            <strong>Heading Hierarchy:</strong> Ensure that the heading
+            hierarchy is logical and consistent. The
+            <code>.uk-card-title</code> should be an appropriate heading level
+            for the context in which the card is used.
+          </li>
+          <li>
+            <strong>Image Alt Text:</strong> If the card contains an image, make
+            sure to provide a descriptive <code>alt</code> attribute for the
+            image to describe its content to screen reader users.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

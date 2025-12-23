@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Slideshow</h1>
+        <p class="uk-text-lead">A component for creating a slideshow.</p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow&gt;
+
+    &lt;ul class="uk-slideshow-items"&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" alt="" data-uk-cover&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" alt="" data-uk-cover&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" alt="" data-uk-cover&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"&gt;&lt;/a&gt;
+    &lt;a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"&gt;&lt;/a&gt;
+
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <div
+          class="uk-position-relative uk-visible-toggle uk-light"
+          data-uk-slideshow
+        >
+          <ul class="uk-slideshow-items">
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                alt=""
+                data-uk-cover
+              />
+            </li>
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                alt=""
+                data-uk-cover
+              />
+            </li>
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                alt=""
+                data-uk-cover
+              />
+            </li>
+          </ul>
+
+          <a
+            class="uk-position-center-left uk-position-small uk-hidden-hover"
+            href="#"
+            data-uk-slidenav-previous
+            data-uk-slideshow-item="previous"
+          ></a>
+          <a
+            class="uk-position-center-right uk-position-small uk-hidden-hover"
+            href="#"
+            data-uk-slidenav-next
+            data-uk-slideshow-item="next"
+          ></a>
+        </div>
+
+        <h2 class="uk-heading-divider">Content overlay</h2>
+        <p>A slideshow can have a content overlay.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-position-relative uk-visible-toggle" tabindex="-1" data-uk-slideshow="animation: push"&gt;
+
+    &lt;ul class="uk-slideshow-items"&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" alt="" data-uk-cover&gt;
+            &lt;div class="uk-position-center uk-position-small uk-text-center uk-light"&gt;
+                &lt;h2 class="uk-margin-remove"&gt;Center&lt;/h2&gt;
+                &lt;p class="uk-margin-remove"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" alt="" data-uk-cover&gt;
+            &lt;div class="uk-position-bottom uk-position-medium uk-text-center uk-light"&gt;
+                &lt;h3 class="uk-margin-remove"&gt;Bottom&lt;/h3&gt;
+                &lt;p class="uk-margin-remove"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" alt="" data-uk-cover&gt;
+            &lt;div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center"&gt;
+                &lt;h3 class="uk-margin-remove"&gt;Overlay Bottom&lt;/h3&gt;
+                &lt;p class="uk-margin-remove"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" alt="" data-uk-cover&gt;
+            &lt;div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small"&gt;
+                &lt;h3 class="uk-margin-remove"&gt;Overlay Bottom Right&lt;/h3&gt;
+                &lt;p class="uk-margin-remove"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="uk-light"&gt;
+        &lt;a class="uk-position-center-left uk-position-small uk-hidden-hover" href data-uk-slidenav-previous data-uk-slideshow-item="previous"&gt;&lt;/a&gt;
+        &lt;a class="uk-position-center-right uk-position-small uk-hidden-hover" href data-uk-slidenav-next data-uk-slideshow-item="next"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div
+          class="uk-position-relative uk-visible-toggle"
+          tabindex="-1"
+          data-uk-slideshow="animation: push"
+        >
+          <ul class="uk-slideshow-items">
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                alt=""
+                data-uk-cover
+              />
+              <div
+                class="uk-position-center uk-position-small uk-text-center uk-light"
+              >
+                <h2 class="uk-margin-remove">Center</h2>
+                <p class="uk-margin-remove">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                alt=""
+                data-uk-cover
+              />
+              <div
+                class="uk-position-bottom uk-position-medium uk-text-center uk-light"
+              >
+                <h3 class="uk-margin-remove">Bottom</h3>
+                <p class="uk-margin-remove">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                alt=""
+                data-uk-cover
+              />
+              <div
+                class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center"
+              >
+                <h3 class="uk-margin-remove">Overlay Bottom</h3>
+                <p class="uk-margin-remove">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                alt=""
+                data-uk-cover
+              />
+              <div
+                class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small"
+              >
+                <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
+                <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="uk-light">
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href
+              data-uk-slidenav-previous
+              data-uk-slideshow-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href
+              data-uk-slidenav-next
+              data-uk-slideshow-item="next"
+            ></a>
+          </div>
+        </div>
+
+        <h2 class="uk-heading-divider">Animations</h2>
+        <p>A slideshow can have different animations.</p>
+
+        <div class="uk-child-width-1-2@m" data-uk-grid>
+          <div>
+            <h3 class="uk-heading-bullet">Slide</h3>
+            <div
+              class="uk-position-relative uk-visible-toggle uk-light"
+              data-uk-slideshow="animation: slide"
+            >
+              <ul class="uk-slideshow-items">
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/photo.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/dark.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/light.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+              </ul>
+
+              <a
+                class="uk-position-center-left uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-previous
+                data-uk-slideshow-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-next
+                data-uk-slideshow-item="next"
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="uk-heading-bullet">Fade</h3>
+            <div
+              class="uk-position-relative uk-visible-toggle uk-light"
+              data-uk-slideshow="animation: fade"
+            >
+              <ul class="uk-slideshow-items">
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/photo.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/dark.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/light.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+              </ul>
+
+              <a
+                class="uk-position-center-left uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-previous
+                data-uk-slideshow-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-next
+                data-uk-slideshow-item="next"
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="uk-heading-bullet">Scale</h3>
+            <div
+              class="uk-position-relative uk-visible-toggle uk-light"
+              data-uk-slideshow="animation: scale"
+            >
+              <ul class="uk-slideshow-items">
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/photo.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/dark.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/light.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+              </ul>
+
+              <a
+                class="uk-position-center-left uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-previous
+                data-uk-slideshow-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-next
+                data-uk-slideshow-item="next"
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="uk-heading-bullet">Pull</h3>
+            <div
+              class="uk-position-relative uk-visible-toggle uk-light"
+              data-uk-slideshow="animation: pull"
+            >
+              <ul class="uk-slideshow-items">
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/photo.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/dark.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/light.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+              </ul>
+
+              <a
+                class="uk-position-center-left uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-previous
+                data-uk-slideshow-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-next
+                data-uk-slideshow-item="next"
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="uk-heading-bullet">Push</h3>
+            <div
+              class="uk-position-relative uk-visible-toggle uk-light"
+              data-uk-slideshow="animation: push"
+            >
+              <ul class="uk-slideshow-items">
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/photo.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/dark.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://getuikit.com/docs/images/light.jpg"
+                    alt=""
+                    data-uk-cover
+                  />
+                </li>
+              </ul>
+
+              <a
+                class="uk-position-center-left uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-previous
+                data-uk-slideshow-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right uk-position-small uk-hidden-hover"
+                href="#"
+                data-uk-slidenav-next
+                data-uk-slideshow-item="next"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <h2 class="uk-heading-divider">Accessibility</h2>
+        <p>
+          The Slideshow component adheres to the Carousel WAI-ARIA design
+          pattern.
+        </p>
+        <ul class="uk-list uk-list-bullet">
+          <li>
+            The slideshow container has the
+            <code>aria-roledescription</code> attribute set to "carousel".
+          </li>
+          <li>
+            Each slide has the <code>aria-roledescription</code> attribute set
+            to "slide" and an <code>aria-label</code>.
+          </li>
+          <li>
+            The navigation has the <code>tablist</code> role, and each
+            navigation item has the <code>presentation</code> role.
+          </li>
+          <li>
+            The navigation links have the <code>tab</code> role, with
+            <code>aria-selected</code> and
+            <code>aria-controls</code> attributes.
+          </li>
+          <li>
+            The previous/next navigation has the <code>button</code> role, with
+            an <code>aria-label</code> and
+            <code>aria-controls</code> attributes.
+          </li>
+          <li>When the slideshow has focus, autoplay is paused.</li>
+          <li>
+            Keyboard navigation is supported. Use the <code>tab</code> and
+            <code>shift+tab</code> keys to navigate between the slideshow and
+            other elements on the page. Use the arrow keys, <code>home</code>,
+            and <code>end</code> keys to navigate between slides.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>
