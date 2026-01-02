@@ -97,51 +97,31 @@
   },
   {
     "name": "Flex",
-    "description": "Description for Flex goes here."
-  },
-  {
-    "name": "Form",
-    "description": "Description for Form goes here."
+    "description": "Create flexbox layouts."
   },
   {
     "name": "Grid",
-    "description": "Description for Grid goes here."
+    "description": "Create a fully responsive, fluid grid layout."
   },
   {
     "name": "Heading",
-    "description": "Description for Heading goes here."
+    "description": "A collection of styles for headings."
   },
   {
     "name": "Height",
-    "description": "Description for Height goes here."
-  },
-  {
-    "name": "Icon",
-    "description": "Description for Icon goes here."
-  },
-  {
-    "name": "Iconnav",
-    "description": "Description for Iconnav goes here."
-  },
-  {
-    "name": "Image",
-    "description": "Description for Image goes here."
+    "description": "A collection of classes to set the height of an element."
   },
   {
     "name": "Inverse",
-    "description": "Description for Inverse goes here."
+    "description": "A collection of classes to apply an inverse style to components."
   },
   {
     "name": "Label",
-    "description": "Description for Label goes here."
-  },
-  {
-    "name": "Leader",
-    "description": "Description for Leader goes here."
+    "description": "A collection of styles for labels."
   },
   {
     "name": "Lightbox",
-    "description": "Description for Lightbox goes here."
+    "description": "A component to create a lightbox for images and videos."
   },
   {
     "name": "Link",

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Flex</h1>
+        <p class="uk-text-lead">Create flexbox layouts.</p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-flex"&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body"&gt;Item 1&lt;/div&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body uk-margin-left"&gt;Item 2&lt;/div&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body uk-margin-left"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+        <div class="uk-flex">
+          <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+          <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2</div>
+          <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+        </div>
+
+        <h2 class="uk-heading-divider">Component Options</h2>
+        <p>The flex component has a number of options available.</p>
+
+        <h3 class="uk-heading-bullet">Alignment</h3>
+        <p>Align items vertically.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-flex uk-flex-middle"&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body"&gt;Item 1&lt;/div&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body uk-margin-left"&gt;Item 2&lt;/div&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body uk-margin-left"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+          <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+          <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 2</div>
+          <div class="uk-card uk-card-default uk-card-body uk-margin-left">Item 3</div>
+        </div>
+
+        <h3 class="uk-heading-bullet">Justification</h3>
+        <p>Justify items horizontally.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div class="uk-flex uk-flex-between"&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body"&gt;Item 1&lt;/div&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body"&gt;Item 2&lt;/div&gt;
+    &lt;div class="uk-card uk-card-default uk-card-body"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+        <div class="uk-flex uk-flex-between">
+          <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+          <div class="uk-card uk-card-default uk-card-body">Item 2</div>
+          <div class="uk-card uk-card-default uk-card-body">Item 3</div>
+        </div>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>

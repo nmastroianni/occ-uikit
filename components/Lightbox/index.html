@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="../../css/uikit.occ-theme.min.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
+  </head>
+  <body class="uk-scope uk-height-viewport uk-flex uk-flex-column">
+    <div id="header-container"></div>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/header.js"></script>
+    <main id="main" class="uk-flex-auto uk-section">
+      <div class="uk-container">
+        <h1 class="uk-heading-medium">Lightbox</h1>
+        <p class="uk-text-lead">
+          A component to create a lightbox for images and videos.
+        </p>
+
+        <h2 class="uk-heading-divider">Usage</h2>
+
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div data-uk-lightbox&gt;
+    &lt;a class="uk-button uk-button-default" href="https://getuikit.com/docs/images/photo.jpg" data-alt="Alt text for the image goes here"&gt;Open Lightbox&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <h2 class="uk-heading-divider">Example:</h2>
+
+        <div data-uk-lightbox>
+          <a
+            class="uk-button uk-button-default"
+            href="https://getuikit.com/docs/images/photo.jpg"
+            data-alt="Alt text for the image goes here"
+            >Open Lightbox</a
+          >
+        </div>
+
+        <h2 class="uk-heading-divider">Component Options</h2>
+        <p>The lightbox component has a number of options available.</p>
+
+        <h3 class="uk-heading-bullet">Caption</h3>
+        <p>You can add a caption to a lightbox item.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">&lt;div data-uk-lightbox&gt;
+    &lt;a class="uk-button uk-button-default" href="https://getuikit.com/docs/images/photo.jpg" data-caption="Caption text goes here"&gt;Open Lightbox&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <div data-uk-lightbox>
+          <a
+            class="uk-button uk-button-default"
+            href="https://getuikit.com/docs/images/photo.jpg"
+            data-caption="Alt text goes here"
+            >Open Lightbox - With Caption</a
+          >
+        </div>
+
+        <h3 class="uk-heading-bullet">Animations</h3>
+        <p>You can apply an animation to the lightbox.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">
+&lt;div class="uk-h3"&gt;Slide&lt;/div&gt;
+&lt;div class="uk-child-width-1-3@m" data-uk-grid data-uk-lightbox="animation: slide"&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/photo.jpg" data-caption="Caption 1"&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/dark.jpg" data-caption="Caption 2"&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+        &lt;div&gt;
+            &lt;a class="uk-inline" href="https://getuikit.com/docs/images/light.jpg" data-caption="Caption 3"&gt;
+                &lt;img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt=""&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;div class="uk-h3"&gt;Fade&lt;/div&gt;
+&lt;div class="uk-child-width-1-3@m" data-uk-grid data-uk-lightbox="animation: fade"&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/photo.jpg" data-caption="Caption 1"&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/dark.jpg" data-caption="Caption 2"&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/light.jpg" data-caption="Caption 3"&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="uk-h3"&gt;Scale&lt;/div&gt;
+&lt;div class="uk-child-width-1-3@m" data-uk-grid data-uk-lightbox="animation: scale"&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/photo.jpg" data-caption="Caption 1"&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/dark.jpg" data-caption="Caption 2"&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/light.jpg" data-caption="Caption 3"&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <div class="uk-h3">Slide</div>
+        <div
+          class="uk-child-width-1-3@m"
+          data-uk-grid
+          data-uk-lightbox="animation: slide"
+        >
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/photo.jpg"
+              data-caption="Caption 1"
+            >
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/dark.jpg"
+              data-caption="Caption 2"
+            >
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/light.jpg"
+              data-caption="Caption 3"
+            >
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="uk-h3">Fade</div>
+        <div
+          class="uk-child-width-1-3@m"
+          data-uk-grid
+          data-uk-lightbox="animation: fade"
+        >
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/photo.jpg"
+              data-caption="Caption 1"
+            >
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/dark.jpg"
+              data-caption="Caption 2"
+            >
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/light.jpg"
+              data-caption="Caption 3"
+            >
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="uk-h3">Scale</div>
+        <div
+          class="uk-child-width-1-3@m"
+          data-uk-grid
+          data-uk-lightbox="animation: scale"
+        >
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/photo.jpg"
+              data-caption="Caption 1"
+            >
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/dark.jpg"
+              data-caption="Caption 2"
+            >
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/light.jpg"
+              data-caption="Caption 3"
+            >
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <h3 class="uk-heading-bullet">Navigations</h3>
+        <p>You can add navigation to the lightbox.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">
+&lt;div class="uk-h3"&gt;Thumbnav&lt;/div&gt;
+&lt;div class="uk-child-width-1-3@m" data-uk-grid data-uk-lightbox="nav: thumbnav; slidenav: false"&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/photo.jpg" data-caption="Caption 1"&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/dark.jpg" data-caption="Caption 2"&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/light.jpg" data-caption="Caption 3"&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="uk-h3"&gt;Dotnav&lt;/div&gt;
+&lt;div class="uk-child-width-1-3@m" data-uk-grid data-uk-lightbox="nav: dotnav; slidenav: false"&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/photo.jpg" data-caption="Caption 1"&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/dark.jpg" data-caption="Caption 2"&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/light.jpg" data-caption="Caption 3"&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <div class="uk-h3">Thumbnav</div>
+        <div
+          class="uk-child-width-1-3@m"
+          data-uk-grid
+          data-uk-lightbox="nav: thumbnav; slidenav: false"
+        >
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/photo.jpg"
+              data-caption="Caption 1"
+            >
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/dark.jpg"
+              data-caption="Caption 2"
+            >
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/light.jpg"
+              data-caption="Caption 3"
+            >
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="uk-h3">Dotnav</div>
+        <div
+          class="uk-child-width-1-3@m"
+          data-uk-grid
+          data-uk-lightbox="nav: dotnav; slidenav: false"
+        >
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/photo.jpg"
+              data-caption="Caption 1"
+            >
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/dark.jpg"
+              data-caption="Caption 2"
+            >
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/light.jpg"
+              data-caption="Caption 3"
+            >
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <h3 class="uk-heading-bullet">Counter</h3>
+        <p>You can add a counter to the lightbox.</p>
+        <div class="code-block-container">
+          <pre><code class="language-html">
+&lt;div class="uk-child-width-1-3@m" data-uk-grid data-uk-lightbox="counter: true"&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/photo.jpg" data-caption="Caption 1"&gt;
+            &lt;img src="https://getuikit.com/docs/images/photo.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/dark.jpg" data-caption="Caption 2"&gt;
+            &lt;img src="https://getuikit.com/docs/images/dark.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class="uk-inline" href="https://getuikit.com/docs/images/light.jpg" data-caption="Caption 3"&gt;
+            &lt;img src="https://getuikit.com/docs/images/light.jpg" width="1800" height="1200" alt=""&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre>
+          <button class="copy-button uk-button uk-button-primary">Copy</button>
+        </div>
+
+        <div
+          class="uk-child-width-1-3@m"
+          data-uk-grid
+          data-uk-lightbox="counter: true"
+        >
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/photo.jpg"
+              data-caption="Caption 1"
+            >
+              <img
+                src="https://getuikit.com/docs/images/photo.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/dark.jpg"
+              data-caption="Caption 2"
+            >
+              <img
+                src="https://getuikit.com/docs/images/dark.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="uk-inline"
+              href="https://getuikit.com/docs/images/light.jpg"
+              data-caption="Caption 3"
+            >
+              <img
+                src="https://getuikit.com/docs/images/light.jpg"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+
+        <h2 class="uk-heading-divider">Accessibility</h2>
+
+        <p>
+          The Lightbox component is keyboard accessible and provides WAI-ARIA
+          attributes for screen readers.
+        </p>
+        <ul class="uk-list uk-list-bullet">
+          <li>
+            Users can navigate through the lightbox items using the arrow keys.
+          </li>
+          <li>The lightbox can be closed by pressing the escape key.</li>
+        </ul>
+      </div>
+    </main>
+    <div
+      id="footer-container"
+      data-footer-path="../../includes/footer.html"
+    ></div>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../../js/copy.js"></script>
+  </body>
+</html>
